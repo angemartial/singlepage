@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{% block title %}Iboh company {% endblock %}</title>
+    <!-- Place favicon.ico in the root directory -->
+    <link href="{{ asset('apple-touch-icon.png') }}" type="img/x-icon" rel="shortcut icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <!-- All css files are included here. -->
+
+    <!-- customizer style css -->
+
+    {% block css %}{% endblock %}
+
+    <!-- Moderniser JS -->
+</head>
+<body>
+
+<header>
+    <!--Header section start-->
+
+
+</header>
+
+        {% block content %}
+
+        {% endblock %}
+    </div>
+</div>
+
+
+<footer></footer>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<script type="text/javascript" src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/axios.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/lodash.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
+{% block js %}{% endblock %}
+</body>
+</html>
